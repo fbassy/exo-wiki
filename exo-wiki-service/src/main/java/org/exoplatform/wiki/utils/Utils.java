@@ -15,16 +15,19 @@ import javax.mail.internet.InternetAddress;
 import org.exoplatform.container.ExoContainer;
 import org.exoplatform.container.ExoContainerContext;
 import org.exoplatform.container.PortalContainer;
-import org.exoplatform.ks.common.Common;
-import org.exoplatform.ks.common.UserHelper;
 import org.exoplatform.portal.config.UserACL;
 import org.exoplatform.portal.config.model.PortalConfig;
 import org.exoplatform.services.jcr.RepositoryService;
 import org.exoplatform.services.jcr.access.AccessControlEntry;
 import org.exoplatform.services.jcr.access.AccessControlList;
+import org.exoplatform.services.jcr.ext.app.SessionProviderService;
+import org.exoplatform.services.jcr.ext.common.SessionProvider;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.exoplatform.services.mail.Message;
+import org.exoplatform.services.organization.OrganizationService;
+import org.exoplatform.services.organization.User;
+import org.exoplatform.services.organization.UserHandler;
 import org.exoplatform.services.scheduler.JobSchedulerService;
 import org.exoplatform.services.security.ConversationState;
 import org.exoplatform.services.security.Identity;
@@ -47,12 +50,15 @@ import org.exoplatform.wiki.service.WikiPageParams;
 import org.exoplatform.wiki.service.WikiService;
 import org.exoplatform.wiki.service.diff.DiffResult;
 import org.exoplatform.wiki.service.diff.DiffService;
+import org.quartz.JobExecutionContext;
 import org.xwiki.rendering.syntax.Syntax;
 
 public class Utils {
   public static final String SLASH = "SLASH";
   
   public static final String DOT = "DOT";
+  
+  public static final String COLON = ":".intern();
   
   public static final String  SPACE                       = "space";
 
@@ -340,7 +346,7 @@ public class Utils {
     List<String> list = page.getWatchedMixin().getWatchers();
     List<String> emailList = new ArrayList<String>();
     for (int i = 0; i < list.size(); i++) {
-      emailList.add(UserHelper.getEmailUser(list.get(i)));
+      emailList.add(getEmailUser(list.get(i)));
     }   
     
     // Get differences
@@ -391,6 +397,32 @@ public class Utils {
       log_.debug("Failed to run job for send email notification", e);
 
     }
+  }
+  
+  public static OrganizationService getOrganizationService() {
+    OrganizationService organizationService = (OrganizationService) ExoContainerContext.getCurrentContainer()
+                                                                                       .getComponentInstanceOfType(OrganizationService.class);
+    return organizationService;
+  }
+  
+  private static UserHandler getUserHandler() {
+    return getOrganizationService().getUserHandler();
+  }
+  
+  public static String getEmailUser(String userName) throws Exception {
+    User user = getUserHandler().findUserByName(userName) ;
+    String email = user.getEmail() ;
+    return email;
+  }
+  
+  public static ExoContainer getExoContainer(JobExecutionContext context) {
+    if(context == null) return null;
+    String portalName = context.getJobDetail().getGroup();
+    if(portalName == null) {
+      portalName = PortalContainer.getCurrentPortalContainerName();
+    }
+    if(portalName.indexOf(COLON) > 0) portalName = portalName.substring(0, portalName.indexOf(":"));
+    return ExoContainerContext.getContainerByName(portalName);
   }
   
   public static boolean isWikiAvailable(String wikiType, String wikiOwner) {
@@ -522,5 +554,10 @@ public class Utils {
     StringBuffer strBuffer = new StringBuffer(url);
     strBuffer.append("?").append(WikiContext.ACTION).append("=").append(COMPARE_REVISION).append("&").append(VER_NAME).append("=").append(verName);
     return strBuffer.toString();
+  }
+  
+  public static SessionProvider createSystemProvider() {
+    SessionProviderService sessionProviderService = (SessionProviderService) ExoContainerContext.getCurrentContainer().getComponentInstanceOfType(SessionProviderService.class);
+    return sessionProviderService.getSystemSessionProvider(null);
   }
 }

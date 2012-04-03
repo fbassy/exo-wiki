@@ -22,7 +22,6 @@ import javax.jcr.PathNotFoundException;
 import org.chromattic.api.NoSuchNodeException;
 import org.chromattic.api.UndeclaredRepositoryException;
 import org.exoplatform.container.ExoContainerContext;
-import org.exoplatform.ks.common.CommonUtils;
 import org.exoplatform.portal.config.model.PortalConfig;
 import org.exoplatform.services.jcr.ext.hierarchy.NodeHierarchyCreator;
 import org.exoplatform.wiki.mow.api.WikiNodeType;
@@ -80,7 +79,7 @@ public class SearchData {
                                                                                            .getComponentInstanceOfType(NodeHierarchyCreator.class);
       try {
         if (wikiOwner != null && wikiOwner.length() > 0) {
-          Node userNode = nodeHierachyCreator.getUserApplicationNode(CommonUtils.createSystemProvider(), wikiOwner);
+          Node userNode = nodeHierachyCreator.getUserApplicationNode(Utils.createSystemProvider(), wikiOwner);
           USER_PATH = userNode.getPath() + "/" + WikiNodeType.Definition.WIKI_APPLICATION + "/";
         }
       } catch (Exception e) {

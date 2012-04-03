@@ -21,9 +21,9 @@ import java.util.List;
 
 import org.exoplatform.container.xml.InitParams;
 import org.exoplatform.container.xml.ValuesParam;
-import org.exoplatform.ks.common.conf.ManagedPlugin;
 import org.exoplatform.management.annotations.Managed;
 import org.exoplatform.management.annotations.ManagedDescription;
+import org.exoplatform.wiki.utils.ManagedPlugin;
 
 /**
  * Created by The eXo Platform SAS
