@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>exo-wiki-renderer</artifactId>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   <name>eXo Wiki Renderer</name>
   <dependencies>
     <dependency>
