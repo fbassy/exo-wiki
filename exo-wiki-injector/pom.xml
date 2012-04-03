@@ -7,8 +7,43 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>exo-wiki-injector</artifactId>
-  <packaging>pom</packaging>
-  <name>eXo Wiki Injector</name>
-  <modules>
-  </modules>
+  <name>eXo Wiki Data Injector</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.exoplatform.kernel</groupId>
+      <artifactId>exo.kernel.commons</artifactId>
+      <version>${org.exoplatform.kernel.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.kernel</groupId>
+      <artifactId>exo.kernel.container</artifactId>
+      <version>${org.exoplatform.kernel.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.jcr</groupId>
+      <artifactId>exo.jcr.component.core</artifactId>
+      <version>${org.exoplatform.jcr.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.chromattic</groupId>
+      <artifactId>chromattic.ext</artifactId>
+      <version>${org.chromattic.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.exo-wiki</groupId>
+      <artifactId>exo-wiki-service</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.commons</groupId>
+      <artifactId>exo.platform.commons.component</artifactId>
+      <version>${org.exoplatform.commons.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 </project>
