@@ -10,5 +10,7 @@
   <packaging>pom</packaging>
   <name>eXo Wiki Macros</name>
   <modules>
+    <module>exo-wiki-macros-jira</module>
+    <module>exo-wiki-macros-iframe</module>
   </modules>
 </project>
