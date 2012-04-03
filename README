@@ -1,12 +1,15 @@
 This project aims to create a pre-testing migration of wiki.
 
 
+
+Migration note:
+= Resolve code dependencies =
 The file list that move from ks common
 
-  org.exoplatform.wiki.utils.Common        that's moved from org.exoplatform.ks.common.Common
-  org.exoplatform.wiki.utils.NotifyInfo    that's moved from org.exoplatform.ks.common.NotifyInfo
-  org.exoplatform.wiki.utils.NotifyJob     that's moved from org.exoplatform.ks.common.notify.NotifyJob
-  org.exoplatform.wiki.utils.ManagedPlugin that's moved from org.exoplatform.ks.common.conf.ManagedPlugin
+  org.exoplatform.ks.common.Common -> org.exoplatform.wiki.utils.Common
+  org.exoplatform.ks.common.NotifyInfo -> org.exoplatform.wiki.utils.NotifyInfo   
+  org.exoplatform.ks.common.notify.NotifyJob-> org.exoplatform.wiki.utils.NotifyJob    
+  org.exoplatform.ks.common.conf.ManagedPlugin -> org.exoplatform.wiki.utils.ManagedPlugin
 
 
 The function list that's added to org.exoplatform.wiki.utils.Utils
