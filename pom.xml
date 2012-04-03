@@ -444,5 +444,16 @@
     </profile>
   </profiles>
   <modules>
+    <module>exo-wiki-injector</module>
+    <module>exo-wiki-renderer</module>
+    <module>exo-wiki-macros</module>
+    <module>exo-wiki-upgrade</module>
+    <module>exo-wiki-migrate</module>
+    <module>exo-wiki-service</module>
+    <module>exo-wiki-webapp</module>
+    <module>exo-wiki-ear</module>
+    <module>exo-wiki-assembly</module>
+    <module>exo-wiki-test</module>
+    <module>exo-wiki-docs</module>
   </modules>
 </project>
