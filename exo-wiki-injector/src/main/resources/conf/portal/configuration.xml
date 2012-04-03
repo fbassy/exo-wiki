@@ -4,8 +4,6 @@
   xsi:schemaLocation="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd http://www.exoplaform.org/xml/ns/kernel_1_2.xsd"
   xmlns="http://www.exoplaform.org/xml/ns/kernel_1_2.xsd">
 
-
-
   <!-- This component initializes forum with random data -->
 
   <component>
@@ -14,20 +12,6 @@
   
   <external-component-plugins>
     <target-component>org.exoplatform.services.bench.DataInjectorService</target-component>
-    <component-plugin>
-      <name>ForumDataInjector</name>
-      <set-method>addInjector</set-method>
-      <type>org.exoplatform.ks.bench.ForumDataInjector</type>
-      <description>inject data for Forum</description>
-    </component-plugin>
-    
-    <component-plugin>
-      <name>AnswerDataInjector</name>
-      <set-method>addInjector</set-method>
-      <type>org.exoplatform.ks.bench.AnswerDataInjector</type>
-      <description>inject data for Answer</description>
-    </component-plugin>
-    
     <component-plugin>
       <name>WikiDataInjector</name>
       <set-method>addInjector</set-method>
