@@ -455,5 +455,6 @@
     <module>exo-wiki-assembly</module>
     <module>exo-wiki-test</module>
     <module>exo-wiki-docs</module>
+    <module>exo-wiki-extension</module>
   </modules>
 </project>
