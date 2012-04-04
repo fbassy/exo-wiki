@@ -4,17 +4,25 @@ This project aims to create a pre-testing migration of wiki.
 
 Migration note:
 = Resolve code dependencies =
-The file list that move from ks common
+==The files that move from ks common==
 
   org.exoplatform.ks.common.Common -> org.exoplatform.wiki.utils.Common
   org.exoplatform.ks.common.NotifyInfo -> org.exoplatform.wiki.utils.NotifyInfo   
-  org.exoplatform.ks.common.notify.NotifyJob-> org.exoplatform.wiki.utils.NotifyJob    
+  org.exoplatform.ks.common.notify.NotifyJob -> org.exoplatform.wiki.utils.NotifyJob    
   org.exoplatform.ks.common.conf.ManagedPlugin -> org.exoplatform.wiki.utils.ManagedPlugin
 
 
-The function list that's added to org.exoplatform.wiki.utils.Utils
+==The functions that's added to org.exoplatform.wiki.utils.Utils==
 
   public static OrganizationService getOrganizationService();
   private static UserHandler getUserHandler();
   public static String getEmailUser(String userName) throws Exception;
   public static ExoContainer getExoContainer(JobExecutionContext context);
+
+
+==The functions that's added to org.exoplatform.wiki.commons.Utils ==
+
+  public static boolean isEmpty(String s);
+  public static String getCurrentUser();
+  public String getLabel(String key) throws Exception;
+  public static String getLabel(String componentId, String label);

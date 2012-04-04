@@ -10,4 +10,5 @@ bin
 target
 .svn
 pom.xml~
+exo-wiki-service/src/main/java/org/exoplatform/wiki/service/rest/model/*
 
