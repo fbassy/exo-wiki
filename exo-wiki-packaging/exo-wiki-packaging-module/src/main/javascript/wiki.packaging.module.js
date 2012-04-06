@@ -100,7 +100,7 @@ function getModule(params) {
   module.demo.rest =
     new Project("org.exoplatform.exo-wiki", "exo-wiki-demo-rest", "war", module.version).
     addDependency(ws.frameworks.servlet);
-  module.extension.deployName = "rest-wikidemo"; 
+  module.demo.rest.deployName = "rest-wikidemo"; 
    
   return module;
 }
