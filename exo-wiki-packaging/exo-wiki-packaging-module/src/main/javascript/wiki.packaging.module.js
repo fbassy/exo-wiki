@@ -32,6 +32,7 @@ function getModule(params) {
   module.wiki = 
     new Project("org.exoplatform.exo-wiki", "exo-wiki-webapp", "war", module.version).
     addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-service", "jar",  module.version)).
+    addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-upgrade", "jar",  module.version)).
     addDependency(new Project("com.google.gwt", "gwt-servlet", "jar",  "${gwt.version}")).
     addDependency(new Project("com.google.gwt", "gwt-user", "jar",  "${gwt.version}")).
     addDependency(new Project("javax.inject", "javax.inject", "jar",  "${javax.inject.version}")).
