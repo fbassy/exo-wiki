@@ -93,7 +93,7 @@
     <container id="UserToolBarForumPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <portlet-application>
         <portlet>
-          <application-ref>ksdemo</application-ref>
+          <application-ref>wikidemo</application-ref>
           <portlet-ref>UserToolBarForumPortlet</portlet-ref>
         </portlet>
         <access-permissions>Everyone</access-permissions>
@@ -103,7 +103,7 @@
     <container id="UserToolBarAnswersPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <portlet-application>
         <portlet>
-          <application-ref>ksdemo</application-ref>
+          <application-ref>wikidemo</application-ref>
           <portlet-ref>UserToolBarAnswersPortlet</portlet-ref>
         </portlet>
         <access-permissions>Everyone</access-permissions>
@@ -113,7 +113,7 @@
     <container id="UserToolBarFaqPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <portlet-application>
         <portlet>
-          <application-ref>ksdemo</application-ref>
+          <application-ref>wikidemo</application-ref>
           <portlet-ref>UserToolBarFaqPortlet</portlet-ref>
         </portlet>
         <access-permissions>Everyone</access-permissions>
@@ -123,7 +123,7 @@
     <container id="UserToolBarPollPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <portlet-application>
         <portlet>
-          <application-ref>ksdemo</application-ref>
+          <application-ref>wikidemo</application-ref>
           <portlet-ref>UserToolBarPollPortlet</portlet-ref>
         </portlet>
         <access-permissions>Everyone</access-permissions>
@@ -133,7 +133,7 @@
     <container id="UserToolBarTourPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <portlet-application>
         <portlet>
-          <application-ref>ksdemo</application-ref>
+          <application-ref>wikidemo</application-ref>
           <portlet-ref>UserToolBarTourPortlet</portlet-ref>
         </portlet>
         <access-permissions>Everyone</access-permissions>
@@ -143,7 +143,7 @@
     <container id="UserToolBarWikiPortlet" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <portlet-application>
         <portlet>
-          <application-ref>ksdemo</application-ref>
+          <application-ref>wikidemo</application-ref>
           <portlet-ref>UserToolBarWikiPortlet</portlet-ref>
         </portlet>
         <access-permissions>Everyone</access-permissions>
