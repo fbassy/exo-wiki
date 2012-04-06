@@ -12,8 +12,6 @@
   <modules>
    <module>exo-wiki-demo-webapp</module>
    <module>exo-wiki-demo-rest</module>
-   <module>exo-wiki-demo-ear</module>
    <module>exo-wiki-demo-config</module>
-   <module>exo-wiki-demo-cometd</module>
   </modules>
 </project>
