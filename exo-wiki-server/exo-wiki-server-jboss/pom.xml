@@ -10,7 +10,6 @@
   <packaging>pom</packaging>
   <name>eXo Wiki Server Jboss</name>
   <modules>
-   <module>exo-wiki-server-jboss-patch</module>
    <module>exo-wiki-server-jboss-ear</module>
   </modules>
 </project>
