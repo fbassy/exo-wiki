@@ -85,12 +85,12 @@ public class URLResolver extends Resolver{
     String uri = null;
     String sign1 = "/" + wikiPageName + "/";
     String sign2 = "/" + wikiPageName;
-    if(url.indexOf(sign1) < 0){
-      if(url.indexOf(sign2) > 0) {
-        uri = url.substring(url.indexOf(sign2) + sign2.length()) ;
+    if(url.lastIndexOf(sign1) < 0){
+      if(url.lastIndexOf(sign2) > 0) {
+        uri = url.substring(url.lastIndexOf(sign2) + sign2.length()) ;
       }      
     } else{
-      uri = url.substring(url.indexOf(sign1) + sign1.length()) ;
+      uri = url.substring(url.lastIndexOf(sign1) + sign1.length()) ;
     }
     
     if(uri != null && uri.length() > 0 && (uri.lastIndexOf("/") + 1) == uri.length()) 
@@ -100,8 +100,8 @@ public class URLResolver extends Resolver{
   
   private String extractPortalOwner(String url, String wikiPageName) throws Exception{
     String sign = "/" + wikiPageName;
-    if(url.indexOf(sign) > 0){
-      String temp = url.substring(0, url.indexOf(sign)) ;
+    if(url.lastIndexOf(sign) > 0){
+      String temp = url.substring(0, url.lastIndexOf(sign)) ;
       return temp.substring(temp.lastIndexOf("/") + 1) ;
     }
     return null ;
