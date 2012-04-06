@@ -31,12 +31,12 @@
               <property name="multi-db" value="false" />
               <property name="update-storage" value="false" />
               <property name="max-buffer-size" value="200k" />
-              <property name="swap-directory" value="target/temp/swap/knowledge" />
+              <property name="swap-directory" value="target/temp/swap/wiki" />
             </properties>
             <value-storages>
-              <value-storage id="knowledge" class="org.exoplatform.services.jcr.impl.storage.value.fs.TreeFileValueStorage">
+              <value-storage id="wiki" class="org.exoplatform.services.jcr.impl.storage.value.fs.TreeFileValueStorage">
                 <properties>
-                  <property name="path" value="target/temp/values/knowledge" />
+                  <property name="path" value="target/temp/values/wiki" />
                 </properties>
                 <filters>
                   <filter property-type="Binary" />
@@ -57,7 +57,7 @@
           </cache>
           <query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
             <properties>
-              <property name="index-dir" value="target/temp/index/repository/knowledge" />
+              <property name="index-dir" value="target/temp/index/repository/wiki" />
               <property name="support-highlighting" value="true" />
               <property name="excerptprovider-class" value="org.exoplatform.services.jcr.impl.core.query.lucene.DefaultHTMLExcerpt" />                           
             </properties>
