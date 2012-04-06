@@ -7,9 +7,9 @@ function getModule(params) {
   var module = new Module();
 
   module.version = "${project.version}";
-  module.relativeMavenRepo = "org/exoplatform/ks";
-  module.relativeSRCRepo = "ks";
-  module.name = "ks";
+  module.relativeMavenRepo = "org/exoplatform/exo-wiki";
+  module.relativeSRCRepo = "exo-wiki";
+  module.name = "exo-wiki";
   
   var commonsVersion = "${org.exoplatform.commons.version}";
 
@@ -17,35 +17,21 @@ function getModule(params) {
   module.commons.extension = 
     new Project("org.exoplatform.commons", "exo.platform.commons.extension.webapp", "war", commonsVersion);
   module.commons.extension.deployName = "commons-extension";
-  
-  module.comet = {};
-  module.comet.cometd =
-    new Project("org.exoplatform.commons", "exo.platform.commons.comet.webapp", "war", commonsVersion).
-    addDependency(new Project("org.mortbay.jetty", "cometd-bayeux", "jar", "${org.mortbay.jetty.cometd-bayeux.version}")).
-    addDependency(new Project("org.mortbay.jetty", "jetty-util", "jar", "${org.mortbay.jetty.jetty-util.version}")).
-    addDependency(new Project("org.mortbay.jetty", "cometd-api", "jar", "${org.mortbay.jetty.cometd-api.version}")).
-    addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.comet.service", "jar", commonsVersion));
-  module.comet.cometd.deployName = "cometd";
-  
+    
   module.webuiExt = new Project("org.exoplatform.commons", "exo.platform.commons.webui.ext", "jar", commonsVersion);
 
   
-  // KS
-
-  // KS components
-  module.component = {};
-  module.component.rendering = new Project("org.exoplatform.ks", "exo.ks.component.rendering", "jar", module.version).
-                            addDependency(new Project("org.exoplatform.ks", "exo.ks.component.macro.iframe", "jar", module.version));
-
-  // KS apps
-  module.eXoApplication = {};
-  module.eXoApplication.upgrade = new Project("org.exoplatform.commons", "exo.platform.commons.component.upgrade", "jar", commonsVersion).
+  // Wiki
+  module.rendering = new Project("org.exoplatform.exo-wiki", "exo-wiki-renderer", "jar", module.version).
+                            addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-macros-iframe", "jar", module.version));
+  
+  module.upgrade = new Project("org.exoplatform.commons", "exo.platform.commons.component.upgrade", "jar", commonsVersion).
     addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.product", "jar", commonsVersion));
   
   //WIKI
-  module.eXoApplication.wiki = 
-    new Project("org.exoplatform.ks", "exo.ks.eXoApplication.wiki.webapp", "war", module.version).
-    addDependency(new Project("org.exoplatform.ks", "exo.ks.eXoApplication.wiki.service", "jar",  module.version)).
+  module.wiki = 
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-webapp", "war", module.version).
+    addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-service", "jar",  module.version)).
     addDependency(new Project("com.google.gwt", "gwt-servlet", "jar",  "${gwt.version}")).
     addDependency(new Project("com.google.gwt", "gwt-user", "jar",  "${gwt.version}")).
     addDependency(new Project("javax.inject", "javax.inject", "jar",  "${javax.inject.version}")).
@@ -79,46 +65,42 @@ function getModule(params) {
     addDependency(new Project("org.suigeneris", "jrcs.diff", "jar",  "${org.suigeneris.version}")).
     addDependency(new Project("org.suigeneris", "jrcs.rcs", "jar",  "${org.suigeneris.version}")).
     addDependency(new Project("ecs", "ecs", "jar",  "${ecs.version}"));
-  module.eXoApplication.wiki.deployName = "wiki";
+  module.wiki.deployName = "wiki";
 
-  // KS we resources and services
-  module.web = {}
-  module.web.ksResources = 
-    new Project("org.exoplatform.ks", "exo.ks.web.ksResources", "war", module.version) ;
+  // Wiki resources and services
+  module.WikiResources = 
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-resources", "war", module.version) ;
 
-  // KS extension for tomcat
+  // Wiki extension for tomcat
   module.extension = {};
   module.extension.webapp = 
-    new Project("org.exoplatform.ks", "exo.ks.extension.webapp", "war", module.version);
-  module.extension.webapp.deployName = "ks-extension";
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-extension-webapp", "war", module.version);
+  module.extension.webapp.deployName = "wiki-extension";
    
   module.server = {}
   module.server.tomcat = {}
   module.server.tomcat.patch =
-    new Project("org.exoplatform.ks", "exo.ks.server.tomcat.patch", "jar", module.version);
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-server-tomcat-patch", "jar", module.version);
 	
   module.server.jboss = {}
   module.server.jboss.patchear =
-    new Project("org.exoplatform.ks", "exo.ks.server.jboss.patch-ear", "jar", module.version);
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-server-jboss-ear", "jar", module.version);
    
-  // KS demo 
+  // Wiki demo 
   module.demo = {};
   // demo portal
   module.demo.portal =
-    new Project("org.exoplatform.ks", "exo.ks.demo.webapp", "war", module.version).
-    addDependency(new Project("org.exoplatform.ks", "exo.ks.component.injector", "jar", module.version)).
-    addDependency(new Project("org.exoplatform.ks", "exo.ks.demo.config", "jar", module.version));
-  module.demo.portal.deployName = "ksdemo";  
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-demo-webapp", "war", module.version).
+    addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-injector", "jar", module.version)).
+    addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-demo-config", "jar", module.version));
+  module.demo.portal.deployName = "wikidemo";
 	
-  module.demo.cometd=
-    new Project("org.exoplatform.ks", "exo.ks.demo.cometd-war", "war", module.version);
-  module.demo.cometd.deployName = "cometd-ksdemo";
 	   
   // demo rest endpoint	   
   module.demo.rest =
-    new Project("org.exoplatform.ks", "exo.ks.demo.rest-ksdemo", "war", module.version).
+    new Project("org.exoplatform.exo-wiki", "exo-wiki-demo-rest", "war", module.version).
     addDependency(ws.frameworks.servlet);
-  module.extension.deployName = "rest-ksdemo"; 
+  module.extension.deployName = "rest-wikidemo"; 
    
   return module;
 }

@@ -33,7 +33,7 @@
     </dependency>
     <dependency>
       <groupId>org.exoplatform.exo-wiki</groupId>
-      <artifactId>exo-wiki-packaging-module</artifactId>
+      <artifactId>exo-wiki.packaging.module</artifactId>
       <version>${project.version}</version>
       <type>js</type>
     </dependency>
@@ -794,7 +794,7 @@
     </dependency><!-- 2.4-->
     <dependency>
       <groupId>org.exoplatform.exo-wiki</groupId>
-      <artifactId>exo-wiki-rendering</artifactId>
+      <artifactId>exo-wiki-renderer</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
     </dependency><!-- 2.2.0-SNAPSHOT-->
