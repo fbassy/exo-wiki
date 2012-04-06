@@ -35,7 +35,7 @@ function getProduct(version) {
   product.addDependencies(wiki.webuiExt);
    
   // KS extension
-  product.addDependencies(wiki.upgrade);
+  //product.addDependencies(wiki.upgrade);
   product.addDependencies(wiki.rendering);
   product.addDependencies(wiki.wiki);
   product.addDependencies(wiki.WikiResources);  

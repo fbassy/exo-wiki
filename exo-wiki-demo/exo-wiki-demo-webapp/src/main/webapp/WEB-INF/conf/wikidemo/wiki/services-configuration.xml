@@ -31,5 +31,6 @@
   
   <remove-configuration>org.mortbay.cometd.continuation.AbstractBayeux</remove-configuration>
   <remove-configuration>org.exoplatform.ws.frameworks.cometd.ContinuationService</remove-configuration>
-  <remove-configuration>org.exoplatform.ws.frameworks.cometd.transport.ContinuationServiceDelegate</remove-configuration>  
+  <remove-configuration>org.exoplatform.ws.frameworks.cometd.transport.ContinuationServiceDelegate</remove-configuration>
+  <remove-configuration>org.exoplatform.commons.upgrade.UpgradeProductService</remove-configuration>
 </configuration>  

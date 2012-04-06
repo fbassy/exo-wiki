@@ -26,14 +26,14 @@ function getModule(params) {
   module.rendering = new Project("org.exoplatform.exo-wiki", "exo-wiki-renderer", "jar", module.version).
                             addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-macros-iframe", "jar", module.version));
   
-  module.upgrade = new Project("org.exoplatform.commons", "exo.platform.commons.component.upgrade", "jar", commonsVersion).
-    addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.product", "jar", commonsVersion));
+  //module.upgrade = new Project("org.exoplatform.commons", "exo.platform.commons.component.upgrade", "jar", commonsVersion).
+    //addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.component.product", "jar", commonsVersion));
   
   //WIKI
   module.wiki = 
     new Project("org.exoplatform.exo-wiki", "exo-wiki-webapp", "war", module.version).
     addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-service", "jar",  module.version)).
-    addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-upgrade", "jar",  module.version)).
+    //addDependency(new Project("org.exoplatform.exo-wiki", "exo-wiki-upgrade", "jar",  module.version)).
     addDependency(new Project("com.google.gwt", "gwt-servlet", "jar",  "${gwt.version}")).
     addDependency(new Project("com.google.gwt", "gwt-user", "jar",  "${gwt.version}")).
     addDependency(new Project("javax.inject", "javax.inject", "jar",  "${javax.inject.version}")).
