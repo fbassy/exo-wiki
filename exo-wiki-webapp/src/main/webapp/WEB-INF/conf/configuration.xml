@@ -386,7 +386,7 @@
           <object type="org.exoplatform.services.jcr.ext.hierarchy.impl.HierarchyConfig">
             <field name="workspaces">
               <collection type="java.util.ArrayList">
-                <value><string>knowledge</string></value> 
+                <value><string>wiki</string></value> 
               </collection>
             </field>
             <field name="workspaces" profiles="all,default,minimal">
@@ -618,7 +618,7 @@
             <field name="target">
               <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
                 <field name="workspace">
-                  <string>knowledge</string>
+                  <string>wiki</string>
                 </field>
                 <field name="workspace" profiles="all,default,minimal">
                   <string>collaboration</string>
@@ -655,7 +655,7 @@
             <field name="target">
               <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
                 <field name="workspace">
-                  <string>knowledge</string>
+                  <string>wiki</string>
                 </field>
                 <field name="workspace" profiles="all,default,minimal">
                   <string>collaboration</string>

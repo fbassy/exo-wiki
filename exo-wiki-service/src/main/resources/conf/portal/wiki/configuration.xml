@@ -203,7 +203,7 @@
         </value-param>
         <value-param>
           <name>workspace-name</name>
-          <value>knowledge</value>
+          <value>wiki</value>
         </value-param>
         <value-param profiles="all,default,minimal">
           <name>workspace-name</name>
