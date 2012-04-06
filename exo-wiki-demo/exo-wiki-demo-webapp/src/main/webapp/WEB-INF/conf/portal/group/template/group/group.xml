@@ -87,8 +87,8 @@
      
      <portlet-application>
        <portlet>
-         <application-ref>ksdemo</application-ref>
-         <portlet-ref>KSDemoCSSControlerPortlet</portlet-ref>
+         <application-ref>wikidemo</application-ref>
+         <portlet-ref>WIKIDemoCSSControlerPortlet</portlet-ref>
        </portlet>
        <access-permissions>Everyone</access-permissions>
        <show-info-bar>false</show-info-bar>

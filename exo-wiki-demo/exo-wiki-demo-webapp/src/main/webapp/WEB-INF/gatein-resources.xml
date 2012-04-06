@@ -34,8 +34,8 @@
   </portlet-skin>
 	
   <portlet-skin>
-	<application-name>ksdemo</application-name>
-	<portlet-name>KSDemoCSSControlerPortlet</portlet-name>
+	<application-name>wikidemo</application-name>
+	<portlet-name>WIKIDemoCSSControlerPortlet</portlet-name>
 	<skin-name>Default</skin-name>
 	<css-path>/templates/skin/Stylesheet.css</css-path>
     <css-priority>1</css-priority>

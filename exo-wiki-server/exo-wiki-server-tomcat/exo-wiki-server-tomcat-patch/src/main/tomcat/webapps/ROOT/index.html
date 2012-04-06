@@ -4,7 +4,7 @@
 
 <html>
 	<head>
-		<meta http-equiv="refresh" content="0;URL='ksdemo' " />
+		<meta http-equiv="refresh" content="0;URL='wikidemo' " />
 	</head>
 
 	<body>
