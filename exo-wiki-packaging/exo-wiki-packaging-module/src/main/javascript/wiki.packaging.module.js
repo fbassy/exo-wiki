@@ -15,7 +15,8 @@ function getModule(params) {
 
   module.commons = {};
   module.commons.extension = 
-    new Project("org.exoplatform.commons", "exo.platform.commons.extension.webapp", "war", commonsVersion);
+    new Project("org.exoplatform.commons", "exo.platform.commons.extension.webapp", "war", commonsVersion).
+       addDependency(new Project("org.exoplatform.commons", "exo.platform.commons.webui", "jar", commonsVersion));
   module.commons.extension.deployName = "commons-extension";
     
   module.webuiExt = new Project("org.exoplatform.commons", "exo.platform.commons.webui.ext", "jar", commonsVersion);
