@@ -14,23 +14,23 @@
       <type>org.exoplatform.container.definition.PortalContainerDefinitionPlugin</type>
       <init-params>
         <object-param>
-          <name>ksdemo</name>
+          <name>wikidemo</name>
           <object type="org.exoplatform.container.definition.PortalContainerDefinition">
             <!-- The name of the portal container -->
             <field name="name">
-              <string>ksdemo</string>
+              <string>wikidemo</string>
             </field>
             <!-- The name of the context name of the rest web application -->
             <field name="restContextName">
-              <string>rest-ksdemo</string>
+              <string>rest-wikidemo</string>
             </field>
             <!-- The name of the realm -->
             <field name="realmName">
-              <string>gatein-domain-ksdemo</string>
+              <string>gatein-domain-wikidemo</string>
             </field>
             <!-- All the dependencies of the portal container ordered by loading priority -->
             <field name="externalSettingsPath">
-              <string>ksdemo.properties</string>
+              <string>wikidemo.properties</string>
             </field>
             <field name="dependencies">
               <collection type="java.util.ArrayList">
@@ -53,7 +53,7 @@
                   <string>eXoGadgetServer</string>
                 </value>
                 <value>
-                  <string>rest-ksdemo</string>
+                  <string>rest-wikidemo</string>
                 </value>
                 <value>
                   <string>web</string>
@@ -62,34 +62,16 @@
                   No wsrp in beta02 <value> <string>wsrp-producer</string> </value>
                 -->
                 <value>
-                  <string>ksResources</string>
-                </value>
-                <value>
-                  <string>faq</string>
-                </value>
-                <value>
-                  <string>forum</string>
-                </value>
-                <value>
-                  <string>poll</string>
-                </value>
-                <value>
                   <string>wiki</string>
                 </value>
                 <value>
-                  <string>ks</string>
+                  <string>wiki-extension</string>
                 </value>
                 <value>
-                  <string>ksdemo</string>
+                  <string>wikidemo</string>
                 </value>
                 <value>
                   <string>commons-extension</string>
-                </value>
-                <value>
-                  <string>cometd-ksdemo</string>
-                </value>
-                <value>
-                  <string>fck</string>
                 </value>
               </collection>
             </field>
