@@ -11,7 +11,7 @@
   <name>eXo Wiki Extension</name>
   <description>Wiki Extension Root Pom</description>
   <modules>
-    <module>config</module>
-    <module>webapp</module>
+    <module>exo-wiki-extension-config</module>
+    <module>exo-wiki-extension-webapp</module>
   </modules>
 </project>
