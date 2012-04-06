@@ -7,7 +7,7 @@
     <init-params>
       <value-param>
         <name>product.versions.declaration.file</name>
-        <value>jar:/conf/ks.properties</value>
+        <value>jar:/conf/wiki.properties</value>
       </value-param>
     </init-params>
   </component>
@@ -38,7 +38,7 @@
 					<name>portal.resource.names</name>
 					<description>The properties files of the portal , those file will be merged
 						into one ResoruceBundle properties </description>
-					<value>locale.portal.ksdemo</value>
+					<value>locale.portal.wikidemo</value>
 					<value>locale.portal.custom</value>
 				</values-param>
 			</init-params>

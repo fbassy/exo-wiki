@@ -1,4 +1,4 @@
-﻿<Context path="/rest-ksdemo" docBase="rest-ksdemo" reloadable="true" crossContext="false">
+﻿<Context path="/rest-wikidemo" docBase="rest-ksdemo" reloadable="true" crossContext="false">
 
   <Logger className='org.apache.catalina.logger.SystemOutLogger'
             prefix='localhost_portal_log.' suffix='.txt' timestamp='true'/>

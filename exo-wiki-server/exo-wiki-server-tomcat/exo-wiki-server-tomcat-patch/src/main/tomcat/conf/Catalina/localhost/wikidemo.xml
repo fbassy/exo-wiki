@@ -18,7 +18,7 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<Context path='/ksdemo' docBase='ksdemo' debug='0' reloadable='true' crossContext='true' privileged='true'>
+<Context path='/wikidemo' docBase='ksdemo' debug='0' reloadable='true' crossContext='true' privileged='true'>
   <Logger className='org.apache.catalina.logger.SystemOutLogger'
           prefix='localhost_portal_log.' suffix='.txt' timestamp='true'/>
   <Manager className='org.apache.catalina.session.PersistentManager' saveOnRestart='false'/>

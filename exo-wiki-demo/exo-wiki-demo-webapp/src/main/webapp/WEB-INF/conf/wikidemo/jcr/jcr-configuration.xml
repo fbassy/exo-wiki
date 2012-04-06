@@ -27,7 +27,7 @@
 				<value-param>
 					<name>conf-path</name>
 					<description>JCR configuration file</description>
-					<value>war:/conf/ksdemo/jcr/repository-configuration.xml</value>
+					<value>war:/conf/wikidemo/jcr/repository-configuration.xml</value>
 				</value-param>
 			</init-params>
 		</component-plugin>
