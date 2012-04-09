@@ -928,7 +928,7 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <build>
-        <finalName>eXoKS-${project.version}</finalName>
+        <finalName>eXoWiki-${project.version}</finalName>
         <plugins>
           <!-- Ensure your environment is correctly setup -->
           <plugin>
@@ -1010,7 +1010,7 @@
     <profile>
       <id>pkg-jbossas</id>
       <build>
-        <finalName>eXoKS-${project.version}</finalName>
+        <finalName>eXoWIKI-${project.version}</finalName>
         <plugins>
           <!-- Ensure your environment is correctly setup -->
           <plugin>
