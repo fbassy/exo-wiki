@@ -459,6 +459,5 @@
     <module>exo-wiki-demo</module>
     <module>exo-wiki-server</module>
     <module>exo-wiki-packaging</module>
-    <module>exo-wiki-resources</module>
   </modules>
 </project>

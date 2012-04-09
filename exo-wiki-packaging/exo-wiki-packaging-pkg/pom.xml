@@ -767,13 +767,7 @@
       <artifactId>exo-wiki-upgrade</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
-    </dependency>
-    <dependency>
-      <groupId>org.exoplatform.exo-wiki</groupId>
-      <artifactId>exo-wiki-resources</artifactId>
-      <version>${project.version}</version>
-      <type>war</type>
-    </dependency><!-- 2.2.0-SNAPSHOT-->
+    </dependency>    
     <dependency>
       <groupId>org.exoplatform.exo-wiki</groupId>
       <artifactId>exo-wiki-server-tomcat-patch</artifactId>

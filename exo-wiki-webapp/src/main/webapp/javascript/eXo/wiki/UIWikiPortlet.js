@@ -17,8 +17,6 @@
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
 
-eXo.require("eXo.core.EventManager");
-
 if (!eXo.wiki)
   eXo.wiki = {};
 
@@ -294,15 +292,15 @@ UIWikiPortlet.prototype.makeRenderingErrorsExpandable = function (uicomponentId)
     var renderingError = renderingErrors[i];
     var descriptionError = renderingError.nextSibling;
     if (descriptionError.innerHTML !== "" && DOMUtil.hasClass(descriptionError,"xwikirenderingerrordescription")) {
-      renderingError.style.cursor="pointer";            
-    	eXo.core.EventManager.addEvent(renderingError,"click",function(event){
+      renderingError.style.cursor="pointer";
+      renderingError.onclick = function(event){
     		if(!DOMUtil.hasClass(descriptionError,"hidden")) {
           descriptionError.className += ' ' + "hidden";
         }
         else {
             DOMUtil.removeClass(descriptionError, "hidden");
           }
-        });
+        };
       }
     }
   }
@@ -323,10 +321,10 @@ UIWikiPortlet.prototype.decorateSpecialLink = function(uicomponentId) {
       var linkSpan = linkSpans[i];
       var pageLink = linkSpan.childNodes[0];
       if (typeof(pageLink) != "undefined" && pageLink.href == "javascript:void(0);") {
-        eXo.core.EventManager.addEvent(pageLink, "click", function(event) {
-          alert(invalidCharsMsg);
-          return;
-        });
+    	  pageLink.onclick = function(event) {
+            alert(invalidCharsMsg);
+            return;
+        };
       }
     }
   }

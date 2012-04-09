@@ -38,7 +38,6 @@ function getProduct(version) {
   //product.addDependencies(wiki.upgrade);
   product.addDependencies(wiki.rendering);
   product.addDependencies(wiki.wiki);
-  product.addDependencies(wiki.WikiResources);  
   product.addDependencies(wiki.extension.webapp);
   product.addDependencies(wiki.commons.extension);
 

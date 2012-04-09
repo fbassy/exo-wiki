@@ -1,6 +1,3 @@
-
-eXo.require("eXo.core.EventManager");
-
 if(eXo.wiki.UITreeExplorer ==  null) {
   eXo.wiki.UITreeExplorer = {};
 };

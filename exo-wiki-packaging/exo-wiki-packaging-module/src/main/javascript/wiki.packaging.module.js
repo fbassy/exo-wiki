@@ -69,10 +69,6 @@ function getModule(params) {
     addDependency(new Project("ecs", "ecs", "jar",  "${ecs.version}"));
   module.wiki.deployName = "wiki";
 
-  // Wiki resources and services
-  module.WikiResources = 
-    new Project("org.exoplatform.exo-wiki", "exo-wiki-resources", "war", module.version) ;
-
   // Wiki extension for tomcat
   module.extension = {};
   module.extension.webapp = 
