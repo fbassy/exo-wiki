@@ -5,7 +5,7 @@
   String portalRequestContext = Util.getPortalRequestContext().getRequestContextPath();
   String autoLoginLink = portalRequestContext + "/" + "login?username=root&amp;password=gtn&amp;initialURI=" + portalRequestContext + "/classic";
 %>
-<div class="UIKsHomepage" id="$uicomponent.id">
+<div class="UIWikiHomepage" id="$uicomponent.id">
 
 	<div class="ProductImage">
 		<h2><%=_ctx.appRes("home.title")%></h2>
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	
-	<div class="KSHomeContainer DecorationTop">
+	<div class="WikiHomeContainer DecorationTop">
 		<div class="DecorationBottom">
 			<div class="DecorationCenter ClearFix">
 			
@@ -77,34 +77,13 @@
 						<p><strong><%=_ctx.appRes("home.newToeXo")%></strong></p>
 						<p><%=_ctx.appRes("home.watch")%> <a target="_blank" href="http://www.exoplatform.com/company/public/website/resource-viewer?path=/website/eXo-Knowledge-GS" class="TxtBlue"><%=_ctx.appRes("home.gettingStarted")%></a>, <%=_ctx.appRes("home.startExploring")%></p>
 					</div>
-					<div class="KSProduct ClearFix">
+					<div class="WikiProduct ClearFix">
 						<div class="ForumProduct">
-							<h1><%=_ctx.appRes("home.forum")%></h1>
+							<h1><%=_ctx.appRes("home.wiki")%></h1>
 							<ul>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.forum.feature1")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.forum.feature2")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.forum.feature3")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.forum.feature4")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.forum.feature5")%></li>
+								<li class="ArowGreyIcon"><%=_ctx.appRes("home.wiki.feature1")%></li>
 							</ul>
-						</div>
-						<div class="AnswersProduct">
-							<h1>Answers</h1>
-							<ul>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.answers.feature1")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.answers.feature2")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.answers.feature3")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.answers.feature4")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.answers.feature5")%></li>
-							</ul>
-						</div>
-						<div class="FAQProduct">
-							<h1>FAQ</h1>
-							<ul>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.faq.feature1")%></li>
-								<li class="ArowGreyIcon"><%=_ctx.appRes("home.faq.feature2")%></li>
-							</ul>
-						</div>
+						</div>						
 					</div>
 					<%if(prContext.getRemoteUser() == null) {%>
 					  <div class="ArowBlackIcon"><%=_ctx.appRes("home.startUsing")%>, <a href="$autoLoginLink" class="TxtBlue"><%=_ctx.appRes("home.loginAsRoot")%></a></div>

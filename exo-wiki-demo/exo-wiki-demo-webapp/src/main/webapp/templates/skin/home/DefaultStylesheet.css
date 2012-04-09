@@ -12,7 +12,7 @@
 	padding: 0px;
 }
 
-#UIContainer-KS {
+#UIContainer-Wiki {
 	padding: 0px;
 }
 
@@ -101,16 +101,10 @@
 	}
 /***************************************************************************************************/
 
-.UIKsHomepage {
+.UIWikiHomepage {
 	margin: auto;
 	width: 980px;
 }
-
-/*****
-.UIKsHomepage .TryNowIcon{
-	background: url('DefaultSkin/background/TryNowIcon.gif') no-repeat top right;
-}
-****/
 
 .PortletDecoration {
 }
@@ -135,7 +129,7 @@
 	padding: 20px 0px 0px 0px;
 }
 
-.UIKsHomepage .PortletDecoration .HomePortletAdBackround {
+.UIWikiHomepage .PortletDecoration .HomePortletAdBackround {
 	padding: 8px;
 }
 
@@ -170,12 +164,12 @@
 	height: 10px;
 }
 
-.UIKsHomepage .HomeBackground {
+.UIWikiHomepage .HomeBackground {
 	background: url('DefaultSkin/background/HomeBackground.jpg') repeat-x center;
 	height: 243px;
 }
 
-.UIKsHomepage .CheckIcon {
+.UIWikiHomepage .CheckIcon {
 	background: url('DefaultSkin/background/CheckIcon.gif') no-repeat left ;
 	line-height: 18px;
 	padding-left: 20px;
@@ -184,24 +178,24 @@
 	white-space: nowrap;
 }
 
-.UIKsHomepage .HomeBackground .HomeImageLeft {
+.UIWikiHomepage .HomeBackground .HomeImageLeft {
 	background: url('DefaultSkin/background/KSHomePageLeft.jpg') no-repeat left;
 	height: 243px;
 }
 
-.UIKsHomepage .HomeBackground .HomeImageRight {
+.UIWikiHomepage .HomeBackground .HomeImageRight {
 	background: url('DefaultSkin/background/KSHomePageRight.jpg') no-repeat right;
 	height: 243px;
 }
 
-.UIKsHomepage .HomeBackground .Label1 {
+.UIWikiHomepage .HomeBackground .Label1 {
 	color:#B5B5B5;
 	font-size:28px;
 	padding:129px 0 0 236px;
 	text-align:left;
 }
 
-.UIKsHomepage .HomeBackground .Label2 {
+.UIWikiHomepage .HomeBackground .Label2 {
 	color:#8f8f8f;
 	font-family:times New Roman;
 	text-align:left;
@@ -209,76 +203,76 @@
 	padding-left: 245px;
 }
 
-.UIKsHomepage .Decorator .DecoratorML {
+.UIWikiHomepage .Decorator .DecoratorML {
 	background: url('DefaultSkin/background/BgDecorator.jpg') no-repeat left top;
 	padding-left: 5px;
 }
 
-.UIKsHomepage .Decorator .DecoratorMR {
+.UIWikiHomepage .Decorator .DecoratorMR {
 	background: url('DefaultSkin/background/BgDecorator.jpg') no-repeat right top;
 	padding-right: 5px;
 }
 
-.UIKsHomepage .Decorator .DecoratorMC {
+.UIWikiHomepage .Decorator .DecoratorMC {
 	background: url('DefaultSkin/background/BgDecorator.jpg') repeat-x left -192px ;
 	height: 192px;
 }
 
-.UIKsHomepage .Decorator .ForumIcon {
+.UIWikiHomepage .Decorator .ForumIcon {
 	background:transparent url(DefaultSkin/background/ForumIcon.jpg) no-repeat 20px bottom;
 	height: 96px;
 	padding-left: 110px;
 }
 
-.UIKsHomepage .Decorator .ForumLabel {
+.UIWikiHomepage .Decorator .ForumLabel {
 	padding: 10px 0px 0px 0px;
 	font-weight: bold;
 }
 
-.UIKsHomepage .Decorator .ForumLabel .Label {
+.UIWikiHomepage .Decorator .ForumLabel .Label {
 	line-height: 20px;
 	width: auto;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-.UIKsHomepage .Decorator .ForumLabel .Title {
+.UIWikiHomepage .Decorator .ForumLabel .Title {
 	line-height: 30px;
 	font-size: 24px;
 	color:#1363c8;
 }
 
-.UIKsHomepage .Decorator .FAQIcon {
+.UIWikiHomepage .Decorator .FAQIcon {
 	background: url('DefaultSkin/background/FAQIcon.jpg') no-repeat 20px bottom;
 	height: 95px;
 	padding-left: 110px;
 }
 
-.UIKsHomepage .Decorator .AnswersIcon {
+.UIWikiHomepage .Decorator .AnswersIcon {
 	background: url('DefaultSkin/background/AnswersIcon.gif') no-repeat 20px bottom;
 	height: 90px;
 	padding-left: 110px;
 }
 
-.UIKsHomepage .Decorator .FAQLabel {
+.UIWikiHomepage .Decorator .FAQLabel {
 	padding: 10px 0px 0px 0px;
 	font-weight: bold;
 }
 
-.UIKsHomepage .Decorator .FAQLabel .Label {
+.UIWikiHomepage .Decorator .FAQLabel .Label {
 	line-height: 20px;
 	width: auto;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-.UIKsHomepage .Decorator .FAQLabel .Title {
+.UIWikiHomepage .Decorator .FAQLabel .Title {
 	line-height: 30px;
 	font-size: 24px;
 	color:#1363c8;
 }
 
-.UIKsHomepage .Decorator .Button {
+.UIWikiHomepage .Decorator .Button {
 	height: 30px; width: 90px;
 }
 
@@ -362,185 +356,13 @@
 	color: #1d7ce1;
 	text-align: center;
 }
-
-/*========================KS Guided Tour===========================*/
-.UIKSGuidedTour {
-	background:transparent url(DefaultSkin/background/LeftKSGuidedTour.gif) repeat-y left;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour {
-	float: left;
-	width: 226px;
-	background:transparent url(DefaultSkin/background/Header.gif) no-repeat left top;
-	padding: 33px 0px 0px 0px;
-	margin: 0px;
-	list-style: none;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .HightLineButton {
-	border: 1px solid #c8c8c8;
-	background: #fff;
-	padding: 1px;
-	margin-top: 2px;
-	cursor: pointer;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .HightLineButton h5 {
-	background: url(DefaultSkin/background/HightLineButton.gif) repeat-x left;
-	padding: 0px 9px;
-	line-height: 32px;
-	border: 1px solid #dea405;
-	font-size: 12px;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .OverButton {
-	border: 1px solid #e8e8e8;
-	background: #fff;
-	padding: 1px;
-	margin-top: 2px;
-	cursor: pointer;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .OverButton h5 {
-	background: url(DefaultSkin/background/OverButton.gif) repeat-x left;
-	padding: 0px 9px;
-	line-height: 32px;
-	border: 1px solid #f2d605;
-	font-size: 12px;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .NormalButton {
-	border: 1px solid #c7c9c8;
-	background: #fff;
-	padding: 1px;
-	margin-top: 2px;
-	cursor: pointer;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .NormalButton h5 {
-	background: url(DefaultSkin/background/NormalButton.gif) repeat-x left ;
-	padding: 0px 10px;
-	line-height: 34px;
-	font-size: 12px;
-}
-
-.UIKSGuidedTour .LeftKSGuidedTour .SignUpButton {
-	background:transparent url(DefaultSkin/background/SignUpButton.gif) no-repeat ;
-	line-height:50px;
-	width:185px; height: 81px;
-	font-weight: bold;
-	font-size: 18px;
-	text-align: center;
-	color: white;
-	margin: 12px auto;
-	cursor: pointer;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour {
-	margin-left: 227px;
-	padding: 8px;
-	background: white;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .HeadTitle {
-	background:transparent url(DefaultSkin/background/HeadTitleC.gif) repeat-x ;
-	line-height: 41px;
-	font-weight: bold;
-	font-size: 18px;
-	text-align: center;
-	color: #427EB8;
-	margin: 8px;
-	border-radius: 5px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .CheckTitleIcon {
-	background: url(DefaultSkin/background/CheckTitleIcon.gif) no-repeat left 5px;
-	line-height: 30px;
-	padding-left: 24px;
-	margin: 0px 0px 0px 8px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .ShowImageKS1 {
-	background:transparent url(DefaultSkin/background/ShowImageKS1.gif) no-repeat left;
-	height: 420px;
-	margin: 4px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .ShowImageKS2 {
-	background:transparent url(DefaultSkin/background/ShowImageKS2.png) no-repeat right;
-	height: 420px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .ShowImageKS3 {
-	background:transparent url(DefaultSkin/background/ShowImageKS3.gif) no-repeat right;
-	height: 420px;
-	margin: 4px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .ShowImageKS4 {
-	background:transparent url(DefaultSkin/background/ShowImageKS4.png) no-repeat left;
-	height: 420px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .TitleBar {
-	background:transparent url(DefaultSkin/background/BgTitleBar.gif) repeat-x scroll left ;
-	border: 1px solid #33669A;
-	color: white;
-	text-align: center;
-	height: 39px;
-	line-height: 39px;
-	border-radius: 5px;
-}
-
-
-.UIKSGuidedTour .RightKSGuidedTour .H4 {
-	background:transparent url(DefaultSkin/background/H4.gif) no-repeat left top;
-	height: 430px; width: 592px;
-	margin: 4px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .H5 {
-	background:transparent url(DefaultSkin/background/H5.gif) no-repeat left;
-	height: 386px; width: 513px;
-	margin: 4px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .KSGuidedTour2 .TitleBar{
-	margin-top: 90px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .KSGuidedTour3 .TitleBar{
-	margin-top: 90px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .H1 {
-	background:transparent url(DefaultSkin/background/H1.gif) no-repeat left;
-	height: 318px; width: 470px;
-	margin: 4px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .H2 {
-	background:transparent url(DefaultSkin/background/H2.gif) no-repeat left;
-	height: 237px;width: 506px;
-	margin: 4px;
-}
-
-.UIKSGuidedTour .RightKSGuidedTour .H3 {
-	background:transparent url(DefaultSkin/background/H3.gif) no-repeat left;
-	height: 315px;width: 491px;
-	margin: 4px;
-}
-
-
-
-
 /*===================HomePage Portlet=====================*/
 
 .TxtBlue{
 	color: #0068ff;
 }
 
-.UIKsHomepage .ProductImage {
+.UIWikiHomepage .ProductImage {
 	background: url("DefaultSkin/background/HomeImage.png") no-repeat center; /* orientation=lt */
 	background: url("DefaultSkin/background/HomeImage-rt.png") no-repeat center; /* orientation=rt */ 
 	height: 233px;
@@ -551,18 +373,18 @@
 	margin-top: 5px;
 }
 
-.UIKsHomepage .ProductImage h2,
-.UIKsHomepage .ProductImage h3  {
+.UIWikiHomepage .ProductImage h2,
+.UIWikiHomepage .ProductImage h3  {
 	color: #FFF;
 	font-family: Hattori,Lucida,Tahoma,Verdana,Arial,Helvetica,sans-serif;
 	font-weight: normal;
 }
 
-.UIKsHomepage .ProductImage h2{
+.UIWikiHomepage .ProductImage h2{
 	font-size: 52px;
 }
 
-.UIKsHomepage .ProductImage h3{
+.UIWikiHomepage .ProductImage h3{
 	font-size: 35px;
 }
 
@@ -651,7 +473,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*=======================================*/
 
-.UIKsHomepage .KSHomeContainer .RightContainer{
+.UIWikiHomepage .WikiHomeContainer .RightContainer{
 	float: right;/* orientation=lt */
 	float: left;/* orientation=rt */
 	width: 234px;
@@ -659,17 +481,17 @@ p, h1, h2, h3, h4, h5, h6 {
 	padding: 10px 0px;
 }
 
-.UIKsHomepage .KSHomeContainer .LeftContainer{
+.UIWikiHomepage .WikiHomeContainer .LeftContainer{
 	margin-right: 245px;/* orientation=lt */
 	margin-left: 245px;/* orientation=rt */
 }
 
-.UIKsHomepage .KSHomeContainer .LeftContainer p {
+.UIWikiHomepage .WikiHomeContainer .LeftContainer p {
 	font-size: 14px;
 	line-height: 20px;
 }
 
-.UIKsHomepage .KSHomeContainer .LeftContainer .RowContent {
+.UIWikiHomepage .WikiHomeContainer .LeftContainer .RowContent {
 	padding: 10px 21px;
 	margin: 0px 3px;
 	border-bottom: 1px solid #eeeeee;
@@ -677,7 +499,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-.UIKsHomepage .KSHomeContainer .IconIM{
+.UIWikiHomepage .WikiHomeContainer .IconIM{
 	float: left;
 	width: 105px;
 	padding-top: 60px;
@@ -688,7 +510,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	display: block;
 }
 
-.UIKsHomepage .KSHomeContainer .BlockWebsite {
+.UIWikiHomepage .WikiHomeContainer .BlockWebsite {
 	margin-bottom: 20px;
 	text-align: center;
 	white-space: nowrap;
@@ -703,79 +525,63 @@ p, h1, h2, h3, h4, h5, h6 {
 	float: right;
 }
 
-.UIKsHomepage .KSHomeContainer .TxtLinkIcon {
+.UIWikiHomepage .WikiHomeContainer .TxtLinkIcon {
 	color:#565759;
 	display:block;
 	font-weight:bold;
 	margin-top:3px;
 }
 
-.UIKsHomepage .KSHomeContainer .IconWebsite {
+.UIWikiHomepage .WikiHomeContainer .IconWebsite {
 	display:block;
 	height:52px;
 	margin:auto;
 	width:55px;
 }
 
-.UIKsHomepage .KSHomeContainer .QuestionsIM{
+.UIWikiHomepage .WikiHomeContainer .QuestionsIM{
 	background:url("DefaultSkin/background/HomePortletKS.png") no-repeat center -74px;
 }
 
-.UIKsHomepage .KSHomeContainer .BlogIM{
+.UIWikiHomepage .WikiHomeContainer .BlogIM{
 	background:url("DefaultSkin/background/HomePortletKS.png") no-repeat center -128px;
 }
 
-.UIKsHomepage .KSHomeContainer .ResuorceIM{
+.UIWikiHomepage .WikiHomeContainer .ResuorceIM{
 	background:url("DefaultSkin/background/HomePortletKS.png") no-repeat center -182px;
 }
 
-.UIKsHomepage .KSHomeContainer .SupportIM{
+.UIWikiHomepage .WikiHomeContainer .SupportIM{
 	background:url("DefaultSkin/background/HomePortletKS.png") no-repeat center -238px;
 }
 
-.UIKsHomepage .KSHomeContainer .TrainingIM{
+.UIWikiHomepage .WikiHomeContainer .TrainingIM{
 	background:url("DefaultSkin/background/HomePortletKS.png") no-repeat center -294px;
 }
 
-.UIKsHomepage .KSHomeContainer .WebsiteIM{
+.UIWikiHomepage .WikiHomeContainer .WebsiteIM{
 	background:url("DefaultSkin/background/HomePortletKS.png") no-repeat center -349px;
 }
 
-.UIKsHomepage .KSProduct{
+.UIWikiHomepage .WikiProduct{
 	padding: 10px 24px;
 	height: 188px;
 }
 
-.UIKsHomepage .KSProduct h1{
+.UIWikiHomepage .WikiProduct h1{
 	color: #f58220;
 	font-size: 18px;
 	font-weight: normal;
 	margin: 4px 0px;
 }
 
-.UIKsHomepage .KSProduct .ForumProduct{
+.UIWikiHomepage .WikiProduct .WikiProduct{
 	float: left;/* orientation=lt */
 	float: right;/* orientation=rt */
 	width: 212px;
 }
 
-.UIKsHomepage .KSProduct .AnswersProduct{
-	float: left;/* orientation=lt */
-	float: right;/* orientation=rt */
-	width: 212px;
-	margin-left: 20px;/* orientation=lt */
-	margin-right: 20px;/* orientation=rt */
-}
-
-.UIKsHomepage .KSProduct .FAQProduct{
-	float: left;/* orientation=lt */
-	float: right;/* orientation=rt */
-	width: 212px;
-	margin-left: 20px;/* orientation=lt */
-	margin-right: 20px;/* orientation=rt */
-}
-
-.UIKsHomepage .KSProduct .ArowGreyIcon{
+.UIWikiHomepage .WikiProduct .ArowGreyIcon{
 	background:url("DefaultSkin/background/ArowGreyIcon.gif") no-repeat left 6px;/* orientation=lt */
 	background:url("DefaultSkin/background/ArowGreyIcon-rt.gif") no-repeat right 6px;/* orientation=rt */
 	padding-left: 16px;/* orientation=lt */
@@ -784,7 +590,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	line-height: 18px;
 }
 
-.UIKsHomepage .ArowBlackIcon{
+.UIWikiHomepage .ArowBlackIcon{
 	background:url("DefaultSkin/background/ArowBlackIcon.gif") no-repeat left 8px;/* orientation=lt */
 	background:url("DefaultSkin/background/ArowBlackIcon-rt.gif") no-repeat right 8px;/* orientation=rt */
 	padding-left: 15px;/* orientation=lt */
@@ -796,7 +602,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-right: 10px;/* orientation=rt */
 }
 
-.UIKsHomepage .KSProduct ul{
+.UIWikiHomepage .WikiProduct ul{
 	list-style:none;
 	margin:0;
 	padding:0;
