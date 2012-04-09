@@ -18,7 +18,9 @@
     </dependency>
   </dependencies>
 
-  <modules>
+  <modules>    
+    <module>exo-wiki-packaging-assembly</module>
+    <module>exo-wiki-packaging-ear</module>
     <module>exo-wiki-packaging-module</module>
     <module>exo-wiki-packaging-product</module>
     <module>exo-wiki-packaging-pkg</module>
