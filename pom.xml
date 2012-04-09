@@ -36,15 +36,12 @@
     <org.exoplatform.exopackage.version>1.1.4</org.exoplatform.exopackage.version>
     <org.chromattic.version>1.1.2</org.chromattic.version>
     <!--commons dependencies -->
-    <org.exoplatform.commons.version>1.1.8-SNAPSHOT</org.exoplatform.commons.version>
-    <!-- eXo extended service -->
-    <org.exoplatform.social.version>1.2.9-SNAPSHOT</org.exoplatform.social.version>
+    <org.exoplatform.commons.version>1.1.8-SNAPSHOT</org.exoplatform.commons.version>    
     <!-- 3rd parties -->
     <org.codehaus.swizzle.version>1.6.1</org.codehaus.swizzle.version>
     <com.xpn.xwiki.platform.plugins.version>1.0</com.xpn.xwiki.platform.plugins.version>
     <mysql-connector-java.version>5.1.18</mysql-connector-java.version>
     <org.jsecurity.version>0.9.0</org.jsecurity.version>
-    <org.aspectj.version>1.6.10</org.aspectj.version>
     <ehcache.version>1.6.0</ehcache.version>
     <juel.version>2.1.2</juel.version>
     <org.testng.version>5.10</org.testng.version>
@@ -79,8 +76,6 @@
     <xpp3.version>1.1.4c</xpp3.version>
     <mockito.version>1.8.1</mockito.version>
     <jtidy.version>4aug2000r7-dev</jtidy.version>
-    <org.mortbay.jetty.cometd-bayeux.version>6.1.11</org.mortbay.jetty.cometd-bayeux.version>
-    <org.mortbay.jetty.cometd-api.version>0.9.20080221</org.mortbay.jetty.cometd-api.version>
     <org.mortbay.jetty.jetty-util.version>6.1.11</org.mortbay.jetty.jetty-util.version>
     <selenium-java-client-driver.version>1.0-beta-1</selenium-java-client-driver.version>
     <c3p0.version>0.9.1.2</c3p0.version>
@@ -197,16 +192,6 @@
         <version>${org.exoplatform.core.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.exoplatform.commons</groupId>
-        <artifactId>exo.platform.commons.comet.service</artifactId>
-        <version>${org.exoplatform.commons.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.exoplatform.commons</groupId>
-        <artifactId>exo.platform.commons.comet.webapp</artifactId>
-        <version>${org.exoplatform.commons.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.exoplatform.portal</groupId>
         <artifactId>exo.portal.component.portal</artifactId>
         <version>${org.exoplatform.portal.version}</version>
@@ -255,11 +240,6 @@
         <groupId>org.exoplatform.tool</groupId>
         <artifactId>exo.tool.framework.junit</artifactId>
         <version>${exo.tool.framework.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.aspectj</groupId>
-        <artifactId>aspectjrt</artifactId>
-        <version>${org.aspectj.version}</version>
       </dependency>
       <dependency>
         <groupId>commons-lang</groupId>
