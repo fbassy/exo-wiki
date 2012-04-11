@@ -752,12 +752,12 @@
       <artifactId>ecs</artifactId>
       <version>${ecs.version}</version>
     </dependency>
-    <dependency>
+    <!--dependency>
       <groupId>org.exoplatform.exo-wiki</groupId>
       <artifactId>exo-wiki-upgrade</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
-    </dependency>    
+    </dependency-->    
     <dependency>
       <groupId>org.exoplatform.exo-wiki</groupId>
       <artifactId>exo-wiki-server-tomcat-patch</artifactId>
