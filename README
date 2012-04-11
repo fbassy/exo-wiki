@@ -1,8 +1,9 @@
 This project aims to create a pre-testing migration of wiki.
 
-
-
 Migration note:
+=Migration date=
+End of TC PLF 3.5.1. We'll update all patch from TC PLF 3.5.2 and higher.
+
 = Resolve code dependencies =
 ==The files that move from ks common==
 
@@ -26,3 +27,5 @@ Migration note:
   public static String getCurrentUser();
   public String getLabel(String key) throws Exception;
   public static String getLabel(String componentId, String label);
+
+
